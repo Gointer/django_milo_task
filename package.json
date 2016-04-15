@@ -1,0 +1,21 @@
+{
+  "name": "django_milo_task",
+  "version": "0.0.0",
+  "description": "git clone https://github.com/Gointer/django_milo_task.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gointer/django_milo_task.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Gointer/django_milo_task/issues"
+  },
+  "devDependencies": {
+    "bower": "~1.7.9"
+  }
+}
