@@ -6,9 +6,16 @@ from django.contrib.auth.models import User
 from django.contrib.auth.models import AbstractUser
 
 
+def rand_int():
+    """
+    Random Id
+    """
+    r = random.randint(0, 100)
+    return r
+
 class MyUser(AbstractUser):
 	birthday = models.DateField()
-	rand_int = models.IntegerField(default=random.randint(1,100))
+	rand_int = models.IntegerField(default=rand_int)
 
 	REQUIRED_FIELDS = ['birthday']
 
