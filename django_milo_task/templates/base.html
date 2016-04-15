@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'lib/Materialize/dist/css/materialize.min.css' %}">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<header>
+		<nav class='grey darken-3'>
+			<ul>
+				<li>
+					<a href="{% url 'user-list' %}">List</a>
+				</li>
+				<li>
+					<a href="{% url 'user-create' %}">Create</a>
+				</li>
+				<li>
+					<a href="{% url 'export_excel' %}">Download</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+
+</body>
+</html>

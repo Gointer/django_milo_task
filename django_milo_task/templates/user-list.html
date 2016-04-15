@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load user_tags %}
+
+{% block title %}User List{% endblock %}
+
+
+{% block content %}
+	<table>
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Birthday</th>
+				<th>Eligible</th>
+				<th>Random Number</th>
+				<th>BizzFuzz</th>
+				<th>Change</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{% for my_user in object_list %}
+				<tr>
+					<td><a href="{% url 'user-detail' my_user.pk %}">{{ my_user.username }}</a></td>
+					<td>{{ my_user.birthday }}</td>
+					<td>{{ my_user.birthday|eligible }}</td>
+					<td>{{ my_user.rand_int }}</td>
+					<td>{{ my_user.rand_int|bizzfuzz }}</td>
+					<td>
+						<a href="{% url 'user-change' my_user.pk %}">Change</a>
+					</td>
+					<td>
+						<a href="{% url 'user-delete' my_user.pk %}">Delete</a>
+					</td>
+				</tr>
+			{% empty %}
+			    <h2>No user are available.</h2>
+			{% endfor %}
+		</tbody>
+	</table>
+
+{% endblock %}

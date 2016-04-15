@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ object.username }}{% endblock %}
+
+
+{% block content %}
+	<div id="detail" class="center">
+		<h2>{{ object.username }}</h2>
+		<p class='flow-text'>{{ object.birthday }}</p>
+		<p class='flow-text'>{{ object.rand_int }}</p>
+	</div>
+{% endblock %}
