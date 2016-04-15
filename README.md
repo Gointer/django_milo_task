@@ -10,3 +10,8 @@ python manage.py collectstatic --noinput
 
 python manage.py runserver
 
+![Alt text](https://github.com/Gointer/screenshots/blob/master/Screenshot%20from%202016-04-15%2007-02-37.png)
+![Alt text](https://github.com/Gointer/screenshots/blob/master/Screenshot%20from%202016-04-15%2007-02-43.png)
+![Alt text](https://github.com/Gointer/screenshots/blob/master/Screenshot%20from%202016-04-15%2007-02-54.png)
+![Alt text](https://github.com/Gointer/screenshots/blob/master/Screenshot%20from%202016-04-15%2007-02-59.png)
+
