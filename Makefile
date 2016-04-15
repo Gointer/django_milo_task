@@ -2,6 +2,7 @@ APP_LIST ?= django_milo_task accounts
 
 install:
 	pip install -r requirements/dev.txt
+	npm install
 
 ci: test
 	@coverage report
